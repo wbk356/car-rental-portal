@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'car-rental-frontend';
+  isBookingFormVisible = false;
+
+  openBookingForm() {
+    this.isBookingFormVisible = true;
+  }
+
+  closeBookingForm() {
+    this.isBookingFormVisible = false;
+  }
 }
